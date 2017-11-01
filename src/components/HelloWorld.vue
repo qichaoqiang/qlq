@@ -1,5 +1,6 @@
 <template>
- 		<div>{{msg}}</div>
+ 		<!--<div>{{msg}}</div>-->
+ 		<div class="active1"></div>
 </template>
 
 <script>
@@ -14,5 +15,8 @@ export default {
 </script>
 
 <style scoped>
-
+.active1{
+	height:70px;
+	background: #FF0000;
+}
 </style>
