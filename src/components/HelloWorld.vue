@@ -1,5 +1,5 @@
 <template>
- 		<div>{{msg}}</div>
+ 		<div class="top">hhgg</div>
 </template>
 
 <script>
@@ -12,7 +12,9 @@ export default {
   }
 }
 </script>
-
+  c
 <style scoped>
-
+.top{
+	background: yellowgreen;
+}
 </style>
