@@ -1,14 +1,11 @@
 <template>
-  <div id="app">
-  	<!--路由下的数据-->
-    <router-view/>
-  </div>
+    <router-view />
 </template>
 
 <script>
-export default {}
+export default{}
 </script>
 
 <style>
-
+@import "./reset.css";
 </style>
