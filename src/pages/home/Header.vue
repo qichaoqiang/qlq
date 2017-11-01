@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
  	<div>
  		<div class="mp-header">
  			<a class="mp-header-left iconfont">&#xe624;</a>
@@ -56,3 +57,12 @@ export default {
 /*.icon-fanhui:before { content: "\e624"; }*/
 
 </style>
+=======
+</template>
+
+<script>
+</script>
+
+<style>
+</style>
+>>>>>>> 1350e76e3bf7fd60a3bbe93e201501d53101d64c

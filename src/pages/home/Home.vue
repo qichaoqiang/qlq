@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
 	<div>
  		<home-header/>
@@ -20,3 +21,17 @@ export default {
 
 <style>
 </style>
+=======
+<<<<<<< HEAD
+<template>
+</template>
+
+<script>
+</script>
+
+<style>
+</style>
+=======
+Home.vue
+>>>>>>> 838fa067ffa6c7b51753b768abf3830d1c7ad101
+>>>>>>> 1350e76e3bf7fd60a3bbe93e201501d53101d64c
