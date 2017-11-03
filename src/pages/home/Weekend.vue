@@ -79,6 +79,7 @@
     background-size: 100% 100%;
 }
 .image-ready img {
+	width:100%;
     opacity: 1;
 }
 .mp-product-item .mp-product-info {

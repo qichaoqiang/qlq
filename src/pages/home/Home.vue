@@ -1,34 +1,36 @@
 <template>
 	<div>
  		<home-header/>
-<<<<<<< HEAD
- 		<weekend-content/>
-=======
+ 		
  		<swiper-content/>
->>>>>>> dfcd6f5bc30d54e52405aa2661a95aaf0b023469
+ 		<lazy-content/>
+ 		<weekend-content/>
  	</div>
 </template>
 
 <script>
 
 import HeaderComponent from "./Header";
-<<<<<<< HEAD
+import SwiperComponent from "./Swiper";
+
+import LazyComponent from "./Lazyload";
 import WeenkendComponent from "./Weekend";
 export default {
    components: {
 		"home-header": HeaderComponent,
-        "weekend-contend": WeenkendComponent
-=======
-import SwiperComponent from "./Swiper";
+        "swiper-content": SwiperComponent,
+          "lazy-content":LazyComponent,
+        "weekend-content": WeenkendComponent
+        
+       }
 
-export default {
-	components: {
-		"home-header": HeaderComponent,
-		"swiper-content": SwiperComponent
->>>>>>> dfcd6f5bc30d54e52405aa2661a95aaf0b023469
-	}
+
+//export default {
+//	components: {
+//		"home-header": HeaderComponent,
+//		
+//	}
 }
 </script>
-
 <style>
 </style>
