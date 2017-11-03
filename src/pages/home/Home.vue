@@ -1,8 +1,8 @@
 <template>
 	<div>
  		<home-header/>
- 		<weekend-content/>
  		<swiper-content/>
+ 		<weekend-content/>
  	</div>
 </template>
 
@@ -15,7 +15,7 @@ import WeenkendComponent from "./Weekend";
 export default {
    	components: {
 		"home-header": HeaderComponent,
-        "weekend-contend": WeenkendComponent,
+        "weekend-content": WeenkendComponent,
 		"swiper-content": SwiperComponent
    	}
 }
