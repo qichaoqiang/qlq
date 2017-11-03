@@ -1,19 +1,18 @@
 <template>
 	<div>
  		<home-header/>
- 		<!--<swiper-content/>-->
+ 		<weekend-content/>
  	</div>
 </template>
 
 <script>
 
 import HeaderComponent from "./Header";
-//import SwiperComponent from "./Swiper";
-
+import WeenkendComponent from "./Weekend";
 export default {
-	components: {
-		"home-header": HeaderComponent
-//		"swiper-content": SwiperComponent
+   components: {
+		"home-header": HeaderComponent,
+        "weekend-contend": WeenkendComponent
 	}
 }
 </script>
