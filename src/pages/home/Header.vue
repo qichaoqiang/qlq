@@ -4,11 +4,11 @@
  			<a class="mp-header-left iconfont">&#xe624;</a>
  			<div class="mp-header-title">
  				<a class="mp-linkera">
- 					<span class="mp-play">输入1111122221111111111111城市/景点/游玩主题</span>
+ 					<span class="mp-play">输入城市/景点/游玩主题</span>
  				</a>
  			</div>
  			<div class="mp-header-right">
- 				<a class="mp-address">北京fsdj</a>
+ 				<a class="mp-address">北京</a>
  				<span class="mp-sanjiao"></span>
  			</div>
  		</div>
@@ -17,12 +17,7 @@
 
 <script>
 export default {
-  name: 'Home',
-//data () {
-//  return {
-//    msg: 'Welcome to Your Vue.js App'
-//  }
-//}
+  name: 'Home'
 }
 </script>
 
@@ -57,6 +52,7 @@ export default {
 	height: .6rem;
 	line-height: .6rem;
 	border-radius: .06rem;
+	overflow: hidden;
 }
 
 .mp-linkera {
@@ -75,13 +71,14 @@ export default {
 .mp-header-right {
 	float: right;
 	position: relative;
+	margin-right: .05rem;
 }
 
 .mp-address {
 	position: absolute;
 	right: .3rem;
 	display: block;
-	width: .9rem;
+	width: .8rem;
 	line-height: .88rem;
 	text-align: right;
 	color: #fff;
@@ -96,7 +93,7 @@ export default {
 	width: 0;
 	height: 0;
 	display: block;
-	border: .14rem transparent solid;
+	border: .1rem transparent solid;
 	border-top-color: #fff;
 	margin-top: .4rem;
 }

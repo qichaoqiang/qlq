@@ -1,19 +1,25 @@
 <template>
 	<div>
  		<home-header/>
- 		<!--<swiper-content/>-->
+ 		<home-section/>
  	</div>
 </template>
 
+export default {
+	components: {
+		"home-header": HeaderComponent,
+		"home-section" : SectionComponent
+	}
+}
 <script>
 
 import HeaderComponent from "./Header";
-//import SwiperComponent from "./Swiper";
+import SectionComponent from "./Section";
 
 export default {
 	components: {
-		"home-header": HeaderComponent
-//		"swiper-content": SwiperComponent
+		"home-header": HeaderComponent,
+		"home-section" : SectionComponent
 	}
 }
 </script>
