@@ -28,8 +28,6 @@ name: 'Home',
 
 <style scoped>
 
-@import "../../../font/iconfont.css";
-
 .mp-header {
 	position: relative;
 	width: 100%;
