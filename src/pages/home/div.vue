@@ -74,7 +74,7 @@
 	}
 	
 	.mp-activity-con {
-		background-color: #00B7FF;
+	
 		width: 100%;
 		margin-top: .2rem;
 	}
@@ -90,7 +90,7 @@
 		color: #212121;
 		font-size: .28rem;
 		float: left;
-		background: #00B7FF;
+		
 	}
 	
 	.mp-fulllink {
