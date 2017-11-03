@@ -1,7 +1,6 @@
 <template>
 	<div>
- 		<home-header/>
- 		
+ 		<home-header/>		
  		<swiper-content/>
  		<lazy-content/>
  		<weekend-content/>
@@ -12,7 +11,6 @@
 
 import HeaderComponent from "./Header";
 import SwiperComponent from "./Swiper";
-
 import LazyComponent from "./Lazyload";
 import WeenkendComponent from "./Weekend";
 export default {
@@ -20,8 +18,7 @@ export default {
 		"home-header": HeaderComponent,
         "swiper-content": SwiperComponent,
           "lazy-content":LazyComponent,
-        "weekend-content": WeenkendComponent
-        
+        "weekend-content": WeenkendComponent  
        }
 
 
@@ -30,6 +27,14 @@ export default {
 //		"home-header": HeaderComponent,
 //		
 //	}
+//import WeenkendComponent from "./Weekend";
+//
+//export default {
+// 	components: {
+//		"home-header": HeaderComponent,
+//      "weekend-content": WeenkendComponent,
+//		"swiper-content": SwiperComponent
+// 	}
 }
 </script>
 <style>
