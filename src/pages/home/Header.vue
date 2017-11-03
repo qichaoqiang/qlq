@@ -17,7 +17,16 @@
 
 <script>
 export default {
+<<<<<<< HEAD
   name: 'Home'
+=======
+name: 'Home',
+//data () {
+//  return {
+//    msg: 'Welcome to Your Vue.js App'
+//  }
+//}
+>>>>>>> f9a33f9622bb272c37bef14586fda3983ae2a2a7
 }
 </script>
 
