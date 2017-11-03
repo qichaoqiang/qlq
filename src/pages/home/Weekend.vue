@@ -17,7 +17,7 @@
 	        		<img src="https://imgs.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg" alt="寻找北京的皇城范儿">
 	        	</div>
 	        	<div class="mp-product-info">
-	        		<p class="product-name">寻找北京的皇城范儿</p>
+	        		<p class="product-name">寻找北京的皇城范儿ds</p>
 	        		<p class="product-desc">数百年的宫廷庙宇，至今依旧威严霸气</p>
 	        	</div>	
 	        </div>
