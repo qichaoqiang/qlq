@@ -1,19 +1,19 @@
 <template>
 	<div>
  		<home-header/>
- 		<!--<swiper-content/>-->
+ 		<home-div/>
  	</div>
 </template>
 
 <script>
 
 import HeaderComponent from "./Header";
-//import SwiperComponent from "./Swiper";
+import DivComponent from "./div";
 
 export default {
 	components: {
-		"home-header": HeaderComponent
-//		"swiper-content": SwiperComponent
+		"home-header": HeaderComponent,
+		"home-div": DivComponent
 	}
 }
 </script>
