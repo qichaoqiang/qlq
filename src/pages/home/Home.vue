@@ -1,7 +1,11 @@
 <template>
 	<div>
  		<home-header/>
- 		<home-Div/>
+
+ 		<swiper-content/>
+ 		<div-content/>
+ 		<weekend-content/>
+
  	</div>
 </template>
 
@@ -10,12 +14,16 @@
 import HeaderComponent from "./Header";
 import DivComponent from "./div";
 
-export default {
-	components: {
-		"home-header": HeaderComponent,
-		"home-Div": DivComponent
+import SwiperComponent from "./Swiper";
+import WeenkendComponent from "./Weekend";
 
-	}
+export default {
+   	components: {
+		"home-header": HeaderComponent,
+        "weekend-content": WeenkendComponent,
+		"swiper-content": SwiperComponent,
+		"div-content": DivComponent,
+   	}
 }
 </script>
 

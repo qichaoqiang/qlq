@@ -8,7 +8,7 @@
  				</a>
  			</div>
  			<div class="mp-header-right">
- 				<a class="mp-address">北京fsdj</a>
+ 				<a class="mp-address">北京</a>
  				<span class="mp-sanjiao"></span>
  			</div>
  		</div>
@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: 'Home',
+name: 'Home',
 //data () {
 //  return {
 //    msg: 'Welcome to Your Vue.js App'

@@ -16,7 +16,7 @@
 				<li class="mp-activity-item">
 					<span class="mp-border"></span>
 					<a class="mp-fulllink" href="#">
-						<img src="http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png"/>
+						<img src="http://img1.qunarzz.com/piao/fusion/1710/a2/e395615b16fb1302.png" />
 					</a>
 				</li>
 				<li class="mp-activity-item">
@@ -32,12 +32,7 @@
 
 <script>
 	export default {
-		name: 'Home',
-		//data () {
-		//  return {
-		//    msg: 'Welcome to Your Vue.js App'
-		//  }
-		//}
+		name: 'div'
 	}
 </script>
 
@@ -77,25 +72,36 @@
 		color: #616161;
 		font-size: .32rem;
 	}
-	.mp-activity-con{
-		           background-color: #00B7FF;
-		       width: 100%;
-		           margin-top: .2rem;
+	
+	.mp-activity-con {
+		background-color: #00B7FF;
+		width: 100%;
+		margin-top: .2rem;
 	}
-	.mp-activity-item{
+	
+	.mp-activity-con ul{
+		overflow: hidden;
+	}
+	.mp-activity-item {
 		position: relative;
-    width: 50%;
-    height: 1.4rem;
-    line-height: 1.4rem;
-    color: #212121;
-    font-size: .28rem;
-    float:left;
+		width: 50%;
+		height: 1.4rem;
+		line-height: 1.4rem;
+		color: #212121;
+		font-size: .28rem;
+		float: left;
+		background: #00B7FF;
 	}
-	.mp-fulllink{
+	
+	.mp-fulllink {
 		width: 100%;
 		height: 100%;
 		text-align: center;
 		display: block;
 	}
-	.mp-fulllink img{width: 80%;height: 100%;}
+	
+	.mp-fulllink img {
+		width: 80%;
+		height: 100%;
+	}
 </style>
