@@ -3,21 +3,25 @@
  		<div class="mp-header">
  			<a class="mp-header-left iconfont">&#xe624;</a>
  			<div class="mp-header-title">
- 				<a class="mp-linkera">
+ 				<router-link to="/list" class="mp-linkera">
  					<span class="mp-play">输入城市/景点/游玩主题</span>
- 				</a>
+ 				</router-link>
+ 				<!--<a class="mp-linkera">
+ 					<span class="mp-play">输入城市/景点/游玩主题</span>
+ 				</a>-->
  			</div>
  			<div class="mp-header-right">
  				<a class="mp-address">北京</a>
  				<span class="mp-sanjiao"></span>
  			</div>
  		</div>
- 	</div>	
+ 		<div class=""></div>
+ 	</div>
 </template>
 
 <script>
 export default {
-name: 'Home',
+name: 'Home'
 //data () {
 //  return {
 //    msg: 'Welcome to Your Vue.js App'
