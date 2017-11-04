@@ -104,6 +104,8 @@
 	}
 	
 	.search-address {
-		
+		height: 1rem;
+		width: 100%;
+		background: red;
 	}
 </style>

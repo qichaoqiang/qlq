@@ -5,7 +5,7 @@
 <script>
 export default{}
 </script>
-
+<script src="./iscroll-master/build/iscroll.js"></script>
 <style>
 @import "./reset.css";
 @import "../font/iconfont.css";
