@@ -100,10 +100,10 @@
 		     			</a>
 		     		</li>
 		     		<li>
-		     			<a>
+		     			<router-link to="/scenic">
 			     			<img src="http://img1.qunarzz.com/piao/fusion/1710/a6/83f636bd75ae6302.png" />
 			     			<p>泡温泉</p>
-		     			</a>
+		     			</router-link>
 		     		</li>
 		 		</ol>
    			</div>
