@@ -2,11 +2,11 @@
 	<div>
 		<div class="mp-ticket-con">
 			<ul class="mp-ticket-list">
-				<li class="mp-ticket-box" v-for="ticket in arr" :key="ticket">
+				<li class="mp-ticket-box" v-for="ticket in ViewInfo" :key="ticket.id">
 					<div class="mp-ticket-info-box">
 						<div class="mp-ticket-info">
 							<div class="mp-ticket-pic-box">
-								<img class="mp-ticket-pic" :src="ticket.pic">
+								<img class="mp-ticket-pic" :src="ticket.pic" alt="图片加载失败" />
 							</div>
 							<div class="mp-ticket-detail">
 								<h3 class="mp-ticket-name">{{ticket.name}}</h3>
@@ -45,89 +45,12 @@
 
 <script>
 	export default {
-		data: function() {
-			return {
-				arr: [
-					{
-						pic: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
-						name: "北京欢乐谷(4A)",
-						hot: "热",
-						minPrice: 15,
-						width: "100%",
-						totalnum: 48175,
-						address: "北京·朝阳区",
-						name1: "【活动票】北京欢乐谷金面王朝演出成人票",
-						price1: 15,
-						name2: "【活动票】北京欢乐谷日场成人票",
-						price2: 111,
-					},
-					{
-						pic: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
-						name: "北京欢乐谷(4A)",
-						hot: "热",
-						minPrice: 15,
-						width: "100%",
-						totalnum: 48175,
-						address: "北京·朝阳区",
-						name1: "【活动票】北京欢乐谷金面王朝演出成人票",
-						price1: 15,
-						name2: "【活动票】北京欢乐谷日场成人票",
-						price2: 111,
-					},
-					{
-						pic: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
-						name: "北京欢乐谷(4A)",
-						hot: "热",
-						minPrice: 15,
-						width: "100%",
-						totalnum: 48175,
-						address: "北京·朝阳区",
-						name1: "【活动票】北京欢乐谷金面王朝演出成人票",
-						price1: 15,
-						name2: "【活动票】北京欢乐谷日场成人票",
-						price2: 111,
-					},
-					{
-						pic: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
-						name: "北京欢乐谷(4A)",
-						hot: "热",
-						minPrice: 15,
-						width: "100%",
-						totalnum: 48175,
-						address: "北京·朝阳区",
-						name1: "【活动票】北京欢乐谷金面王朝演出成人票",
-						price1: 15,
-						name2: "【活动票】北京欢乐谷日场成人票",
-						price2: 111,
-					},
-					{
-						pic: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
-						name: "北京欢乐谷(4A)",
-						hot: "热",
-						minPrice: 15,
-						width: "100%",
-						totalnum: 48175,
-						address: "北京·朝阳区",
-						name1: "【活动票】北京欢乐谷金面王朝演出成人票",
-						price1: 15,
-						name2: "【活动票】北京欢乐谷日场成人票",
-						price2: 111,
-					},
-					{
-						pic: "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
-						name: "北京欢乐谷(4A)",
-						hot: "热",
-						minPrice: 15,
-						width: "100%",
-						totalnum: 48175,
-						address: "北京·朝阳区",
-						name1: "【活动票】北京欢乐谷金面王朝演出成人票",
-						price1: 15,
-						name2: "【活动票】北京欢乐谷日场成人票",
-						price2: 111,
-					},
-				]
-			}
+		props: ["ViewInfo","123"],
+		data() {
+			return {}
+		},
+		mounted() {
+			console.log(this.ViewInfo);
 		}
 	}
 </script>
@@ -144,11 +67,15 @@
 		padding: .2rem;	
 	}
 	.mp-ticket-pic-box {
+		width: 1.6rem;
+		height: 1.6rem;
 		float: left;
 	}
 	.mp-ticket-pic {
 		width: 1.6rem;
 		height: 1.6rem;
+		display: block;
+		background: red;
 	}
 	.mp-ticket-detail {
 		position: relative;
@@ -170,7 +97,7 @@
 	.mp-ticket-hot {
 		display: inline-block;
 		margin-left: .06rem;
-		width: .3rem;
+		width: auto;
 		height: .3rem;
 		background: #ff1200;
 		color: #fff;

@@ -1,0 +1,91 @@
+{
+	"ret": true,
+	"data": {
+		"viewList": [
+			{
+				"id": 0,
+				"pic": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
+				"name": "北京欢乐谷(4A)",
+				"hot": "热",
+				"minPrice": 15,
+				"width": "100%",
+				"totalnum": 48175,
+				"address": "北京·朝阳区",
+				"name1": "【活动票】北京欢乐谷金面王朝演出成人票",
+				"price1": 15,
+				"name2": "【活动票】北京欢乐谷日场成人票",
+				"price2": 111
+			},
+			{
+				"id": 1,
+				"pic": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_110x110_d9d85877.jpg",
+				"name": "颐和园(5A)",
+				"hot": "热",
+				"minPrice": 22.7,
+				"width": "98%",
+				"totalnum": 21260,
+				"address": "北京·海淀区",
+				"name1": "颐和园+园中园成人票",
+				"price1": 48.6,
+				"name2": "颐和园+园中园学生票/老人票",
+				"price2": 25
+			},
+			{
+				"id": 2,
+				"pic": "http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_110x110_ceacdb5c.jpg",
+				"name": "香山公园(4A)",
+				"hot": "",
+				"minPrice": 2.5,
+				"width": "90%",
+				"totalnum": 528,
+				"address": "北京·海淀区",
+				"name1": "香山公园景区手机电子导游",
+				"price1": 2.5,
+				"name2": "【秋季限定】北京香山赏红叶+碧云寺秋色",
+				"price2": 108
+			},
+			{
+				"id": 3,
+				"pic": "http://img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_110x110_e23a9143.jpg",
+				"name": "北京欢乐谷(4A)",
+				"hot": "热",
+				"minPrice": 15,
+				"width": "100%",
+				"totalnum": 48175,
+				"address": "北京·朝阳区",
+				"name1": "【活动票】北京欢乐谷金面王朝演出成人票",
+				"price1": 15,
+				"name2": "【活动票】北京欢乐谷日场成人票",
+				"price2": 111
+			},
+			{
+				"id": 4,
+				"pic": "http://img1.qunarzz.com/sight/p0/1505/d2/d274c92de14c93da.water.jpg_110x110_d9d85877.jpg",
+				"name": "颐和园(5A)",
+				"hot": "热",
+				"minPrice": 22.7,
+				"width": "98%",
+				"totalnum": 21260,
+				"address": "北京·海淀区",
+				"name1": "颐和园+园中园成人票",
+				"price1": 48.6,
+				"name2": "颐和园+园中园学生票/老人票",
+				"price2": 25
+			},
+			{
+				"id": 5,
+				"pic": "http://img1.qunarzz.com/sight/p0/201403/07/a3231208ca4095bef77068c202d95bd2.jpg_110x110_ceacdb5c.jpg",
+				"name": "香山公园(4A)",
+				"hot": "",
+				"minPrice": 2.5,
+				"width": "90%",
+				"totalnum": 528,
+				"address": "北京·海淀区",
+				"name1": "香山公园景区手机电子导游",
+				"price1": 2.5,
+				"name2": "【秋季限定】北京香山赏红叶+碧云寺秋色",
+				"price2": 108
+			}
+		]
+	}
+}

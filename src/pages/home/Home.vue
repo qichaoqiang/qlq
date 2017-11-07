@@ -1,30 +1,22 @@
 <template>
 	<div>
  		<home-header/>
- 		<swiper-content/>
+ 		<swiper-content :swiperInfo="this.$store.state.swiperInfo"/>
  		<home-section/>
  		<div-content/>
  		<lazy-content/>
  		<weekend-content/>
- 		<div class="xxx" v-if="show"></div>
  	</div>
 </template>
 
 <script>
-import HeaderComponent from "./Header";
-import DivComponent from "./div";
-import SwiperComponent from "./Swiper";
-import LazyComponent from "./Lazyload";
-import WeenkendComponent from "./Weekend";
-import SectionComponent from "./Section";
+import HeaderComponent from "./components/Header";
+import DivComponent from "./components/div";
+import SwiperComponent from "./components/Swiper";
+import LazyComponent from "./components/Lazyload";
+import WeenkendComponent from "./components/Weekend";
+import SectionComponent from "./components/Section";
 export default {
-	data: function() {
-		return {
-			scrollTop1: "",
-			scrollTop2: "",
-			show: ""
-		}
-	},
   	components: {
 		"home-header": HeaderComponent,
         "swiper-content": SwiperComponent,
@@ -33,22 +25,10 @@ export default {
 		"div-content": DivComponent,
 		"home-section" : SectionComponent
    	},
-   	methods: {
-   		handleScroll: function() {
-   			this.scrollTop1 = this.scrollTop2;  
-		  	this.scrollTop2 = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-		  	if(this.scrollTop1 <= this.scrollTop2) {
-		  		this.show = false;
-		  	}else {
-		  		this.show = true;
-		  	}
-		  	console.log(this);
-		},
-	},
-	mounted: function() {
-		this.scrollTop1 = 0;
-		window.addEventListener('scroll', this.handleScroll);
-		  	
+	mounted() {
+		if (!this.$store.state.swiperInfo.length) {
+			this.$store.dispatch("getSwiperInfo");
+		}  	
 	}
 }
 </script>
