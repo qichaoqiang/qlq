@@ -1,29 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import axios from 'axios';
+import home from '../pages/home/module.js'
+import view from '../pages/scenic/module.js'
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-	state: {
-		swiperInfo: []
-	},
-	actions: {
-		getSwiperInfo(context) {
-			axios.get('/static/index/index.json')
-				.then((response) => {
-					if(response.status === 200) {
-						const {data} = response.data;
-						console.log(data);
-						context.commit("changeSwiperInfo", data.swiperInfo);
-					}
-				})
-		}
-	},
-	mutations: {
-		changeSwiperInfo(state, data) {
-			state.swiperInfo = data;
-		}
-	},
-	getters: {}
+	modules: {
+		home: home,
+		view: view
+	}
 })

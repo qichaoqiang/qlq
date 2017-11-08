@@ -6,10 +6,10 @@
 	    		<div class="product-imgcontainer image-ready">
 	    			<img src="https://imgs.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg" alt="北京温泉排行榜">
 	    		</div>
-	    	  <div class="mp-product-info">
-	    		<p class="product-name">北京温泉排行榜</p>
-	    		<p class="product-desc">细数北京温泉，温暖你的冬天</p>
-	    	  </div>
+		    	<div class="mp-product-info">
+		    		<p class="product-name">北京温泉排行榜</p>
+		    		<p class="product-desc">细数北京温泉，温暖你的冬天</p>
+		    	</div>
 	        </div>
 	        
 	        <div class="mp-product-item">

@@ -1,7 +1,7 @@
 <template>
 	<div>
  		<home-header/>
- 		<swiper-content :swiperInfo="this.$store.state.swiperInfo"/>
+ 		<swiper-content/>
  		<home-section/>
  		<div-content/>
  		<lazy-content/>
@@ -26,7 +26,7 @@ export default {
 		"home-section" : SectionComponent
    	},
 	mounted() {
-		if (!this.$store.state.swiperInfo.length) {
+		if (this.$store.getters.shouldGetData) {
 			this.$store.dispatch("getSwiperInfo");
 		}  	
 	}

@@ -17,71 +17,8 @@
 		<div class="mp-select-all" v-if="show1">
 			<div class="mp-select-list" scrolling="no">
 				<ul class="mp-select-inner">
-					<li class="mp-view-select">
-						<span class="mp-view-menu">全部分类</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">运动健身</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">文化古迹</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">农家度假</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">演出</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">游乐场</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">自然风光</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">公园</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">展馆</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">温泉</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">户外拓展</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">室内娱乐</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">城市观光</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">体验馆</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">餐饮</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">水上玩乐</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">手工</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">植物园</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">出行必备</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">游船</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">交通</span>
-					</li>
-					<li class="mp-view-select">
-						<span class="mp-view-menu">海洋馆</span>
+					<li class="mp-view-select" ref="listScroll" v-for="item in allKindInfo" :key="item.id">
+						<span class="mp-view-menu">{{item.kind}}</span>
 					</li>
 				</ul>
 			</div>
@@ -103,12 +40,13 @@
 </template>
 
 <script>
-	
 	export default {
 		data: function() {
 			return {
 				show1: false,
-				show2: false
+				show2: false,
+				flag: false,
+				loading: false
 			}
 		},
 		methods: {
@@ -119,6 +57,11 @@
 			mpShow2: function() {
 				this.show1 = false;
 				this.show2 = true;
+			}
+		},
+		computed: {
+			allKindInfo() {
+				return this.$store.state.view.allKindInfo;
 			}
 		}
 	}
@@ -195,6 +138,8 @@
 		line-height: .8rem;
 		overflow: hidden;
 		text-indent: 1.2rem;
+		border-bottom: .02rem #eee solid;
+		box-sizing: border-box;
 	}
 	.mp-select-commend {
 		position: absolute;

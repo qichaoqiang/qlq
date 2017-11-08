@@ -45,12 +45,11 @@
 
 <script>
 	export default {
-		props: ["ViewInfo","123"],
-		data() {
-			return {}
-		},
-		mounted() {
-			console.log(this.ViewInfo);
+		computed: {
+			ViewInfo() {
+				console.log(this.$store);	
+				return this.$store.state.view.ViewInfo;
+			}
 		}
 	}
 </script>
