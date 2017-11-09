@@ -88,11 +88,11 @@
 		}, {
 			"id":21,
 			"link":"/list",
-			"tourist":"西岭雪山滑雪场"
+			"place":"西岭雪山滑雪场"
 		},{
 			"id":22,
 			"link":"/list",
-			"tourist":"泰山"
+			"place":"泰山"
 		}, {
 			"id":23,
 			"link":"/list",
@@ -100,11 +100,11 @@
 		}, {
 			"id":24,
 			"link":"/list",
-			"tourist":"普陀山"
+			"place":"普陀山"
 		},{
 			"id":25,
 			"link":"/list",
-			"tourist":"成都欢乐谷"
+			"place":"成都欢乐谷"
 		}, {
 			"id":26,
 			"link":"/list",
@@ -121,7 +121,8 @@
 			"id":29,
 			"link":"/list",
 			"place":"武汉欢乐谷"
-		}],
+		}
+		],
 		
 		"cityInfo":[{
 				"id":1,

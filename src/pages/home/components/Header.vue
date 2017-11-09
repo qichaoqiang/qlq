@@ -1,18 +1,11 @@
 <template>
  	<div>
  		<div class="mp-header">
- 			<a class="mp-header-left iconfont">&#xe624;</a>
+ 			<a class="mp-header-left iconfont">&#xe602;</a>
  			<div class="mp-header-title">
-<<<<<<< HEAD:src/pages/home/Header.vue
  				<router-link to="/search" class="mp-linkera">
-=======
- 				<router-link to="/list" class="mp-linkera">
->>>>>>> 283ece6f5a7ce23a374e2cd7cfc3b56ed36f1fce:src/pages/home/components/Header.vue
  					<span class="mp-play">输入城市/景点/游玩主题</span>
  				</router-link>
- 				<!--<a class="mp-linkera">
- 					<span class="mp-play">输入城市/景点/游玩主题</span>
- 				</a>-->
  			</div>
  			<div class="mp-header-right">
  				<a class="mp-address">北京</a>
@@ -26,11 +19,6 @@
 <script>
 export default {
 name: 'Home'
-//data () {
-//  return {
-//    msg: 'Welcome to Your Vue.js App'
-//  }
-//}
 }
 </script>
 
@@ -49,7 +37,7 @@ name: 'Home'
 	width: .4rem;
 	line-height: .88rem;
 	padding: 0 .2rem;
-	font-size: .36rem;
+	font-size: .5rem;
 	font-weight: bold;
 	color: #fff;
 	text-align: left;
@@ -108,16 +96,4 @@ name: 'Home'
 	border-top-color: #fff;
 	margin-top: .4rem;
 }
-
-/*
-.iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}*/
-
-/*.icon-fanhui:before { content: "\e624"; }*/
-
 </style>

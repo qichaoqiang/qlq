@@ -13,7 +13,7 @@
 				</div>
 			</div>
 		</div>
-		<div v-if="show" class="search-address">
+		<div v-if="show" @click="show = true" class="search-address">
 			<div class="mp-hotsearch-head">
 				<span class="mp-hotsearch-title">热门搜索</span>
 				<span class="mp-hotsearch-refreshoption">
@@ -56,14 +56,15 @@
 
 	</div>
 </template>
+<script src="vue.js"></script>
 <script>
 	var x = 88,
 		i = 1;
 	import { mapState } from 'vuex'
 	export default {
-		data: function() {
+		data() {
 			return {
-				show: true
+				show: false
 			}
 		},
 		computed: mapState({
