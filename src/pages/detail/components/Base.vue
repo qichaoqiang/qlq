@@ -21,10 +21,10 @@
 	export default {
 		computed:{
 			baseInfo(){
-				return this.$store.state.mplist.baseInfo;
+				return this.$store.state.baseInfo;
 			},
 			openInfo(){
-				return this.$store.state.mplist.openInfo;
+				return this.$store.state.openInfo;
 			}
 		}
 	}

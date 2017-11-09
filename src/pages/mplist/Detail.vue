@@ -3,6 +3,7 @@
 		<detail-header/>
 		<detail-base/>
 		<detail-comments/>
+		<detail-mpticket/>
 		</div>
 </template>
 
@@ -10,21 +11,14 @@
 	import  Header from "./components/Header" ;
 	import  Base from "./components/Base" ;
 	import  Comments from "./components/Comments" ;
+	import Mpticket from "./components/Mpticket"
 	
 	export default{
-		data(){
-			return {
-				headerInfo:[],
-				baseInfo:[],
-				commentsInfo:[],
-				evaluateInfo:[],
-				openInfo:[]
-			}
-		},
 		components: {
 			"detail-header":Header,
 			"detail-base":Base,
-			"detail-comments":Comments		
+			"detail-comments":Comments,	
+			"detail-mpticket":Mpticket
   },
   mounted(){
   		this.$store.dispatch("getDetailInfo");

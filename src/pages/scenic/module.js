@@ -21,7 +21,7 @@ export default {
 		}
 	},
 	getters: {
-		shouldGetData1(state) {
+		shouldGetViewData(state) {
 			if(!state.ViewInfo.length) {
 				return true;
 			}else {

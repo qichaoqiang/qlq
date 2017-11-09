@@ -88,6 +88,7 @@
 					this.$refs.getChange.style.top = -(x - 50) * i + "px";
 					i++;
 				} else {
+					i=1;
 					this.$refs.change.style.top = 0 + "px";
 					this.$refs.getChange.style.top = 0 + "px";
 				}
@@ -96,7 +97,7 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	html {
 		background: #f0f5f6;
 	}

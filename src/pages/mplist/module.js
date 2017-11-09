@@ -5,7 +5,8 @@ export default {
 		baseInfo:[],
 		commentsInfo:[],
 		evaluateInfo:[],
-		openInfo:[]
+		openInfo:[],
+		recommendlistInfo:[]
 		
 	},
 	actions:{
@@ -26,6 +27,7 @@ export default {
 			state.commentsInfo = data.commentsInfo;
 			state.evaluateInfo = data.evaluateInfo;
 			state.openInfo = data.openInfo;
+			state.recommendlistInfo = data.recommendlistInfo;
 		}
 	},
 	getters:{
@@ -34,7 +36,8 @@ export default {
 			!state.baseInfo.length &&
 			!state.commentsInfo.length &&
 			!state.evaluateInfo.length &&
-			!state.openInfo.length){
+			!state.openInfo.length && 
+			!state.recommendlistInfo){
 				return true
 			}else{
 				return false;

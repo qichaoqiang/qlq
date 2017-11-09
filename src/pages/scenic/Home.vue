@@ -20,7 +20,7 @@ export default {
 		"ticket-list": TicketComponent
    	},
    	mounted() {
-   		if(this.$store.getters.shouldGetData1){
+   		if(this.$store.getters.shouldGetViewData){
    			this.$store.dispatch("getViewInfoData");
    		}
    	}

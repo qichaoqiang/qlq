@@ -26,7 +26,7 @@ export default {
 		"home-section" : SectionComponent
    },
 	mounted() {
-		if (this.$store.getters.shouldGetData) {
+		if (this.$store.getters.shouldGetIndexData) {
 			this.$store.dispatch("getSwiperInfo");
 		}  	
 	}

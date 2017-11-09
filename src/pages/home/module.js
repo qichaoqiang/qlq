@@ -24,7 +24,7 @@ export default {
 		}
 	},
 	getters: {
-		shouldGetData(state) {
+		shouldGetIndexData(state) {
 			if(!state.swiperInfo.length) {
 				return true;
 			}else {

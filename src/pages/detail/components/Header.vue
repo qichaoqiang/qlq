@@ -46,7 +46,8 @@
 			headerInfo(state){
 				return state.mplist.headerInfo;
 			}
-		})
+		}),
+		window.removeEventListener('scroll',this.handleScroll);
 	}
 </script>
 

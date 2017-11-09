@@ -17,8 +17,7 @@
 				headerInfo:[],
 				baseInfo:[],
 				commentsInfo:[],
-				evaluateInfo:[],
-				openInfo:[]
+				evaluateInfo:[]
 			}
 		},
 		components: {

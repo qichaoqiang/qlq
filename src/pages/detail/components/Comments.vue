@@ -28,7 +28,7 @@
 			return this.$store.state.mplist.commentsInfo
 			},
 			evaluateInfo(){
-			return this.$store.state.mplist.evaluateInfo	
+			return this.$store.state.evaluateInfo	
 			}
 		}
 	}
