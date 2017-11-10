@@ -28,7 +28,6 @@
     	},
     	computed: {
     		swiperInfo() {
-    			console.log(this.$store);
     			return this.$store.state.home.swiperInfo;
     		}
     	},

@@ -9,5 +9,7 @@ export default{}
 @import "./reset.css";
 @import "../font/fontLt/iconfont.css";
 @import "../font/fontStar/iconfont.css";
+@import "../font/fontAC/iconfont.css";
+@import "../font/fontgo/iconfont.css";
 @import '../node_modules/swiper/dist/css/swiper.css';
 </style>

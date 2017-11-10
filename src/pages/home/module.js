@@ -2,7 +2,9 @@ import axios from 'axios'
 
 export default {
 	state: {
-		swiperInfo: []
+		swiperInfo: [],
+		activityInfo: [],
+		weekendInfo: []
 	},
 	actions: {
 		getSwiperInfo(context) {
@@ -11,21 +13,23 @@ export default {
 				.then((response) => {
 					if(response.status === 200) {
 						const {data} = response.data;
-						console.log(data);
-						context.commit("changeSwiperInfo", data.swiperInfo);
+						context.commit("changeSwiperInfo", data);
 					}
 				})
 		}
 	},
 	mutations: {
 		changeSwiperInfo(state, data) {
-			state.swiperInfo = data;
-			console.log(state.swiperInfo);
+			state.swiperInfo = data.swiperInfo;
+			state.activityInfo = data.activityInfo;
+			state.weekendInfo = data.weekendInfo;
+			console.log(state);
+			console.log(state.swiperInfo)
 		}
 	},
 	getters: {
-		shouldGetData(state) {
-			if(!state.swiperInfo.length) {
+		shouldGetIndexData(state) {
+			if(!state.swiperInfo.length && !state.activityInfo.length && !state.weekendInfo.length) {
 				return true;
 			}else {
 				return false;

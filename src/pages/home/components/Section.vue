@@ -58,10 +58,12 @@
    			<div class="swiper-img-con">
    				<ol class="swiper-img">
    					<li>
-		     			<a>
-			     			<img src="http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png" />
-			     			<p>景点门票</p>
-		     			</a>
+   						<router-link to="/order">
+			     			<a>
+				     			<img src="http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png" />
+				     			<p>景点门票</p>
+			     			</a>
+		     			</router-link>
 		     		</li>
 		     		<li>
 		     			<a>
@@ -76,10 +78,12 @@
 		     			</a>
 		     		</li>
 		     		<li>
-		     			<a>
-			     			<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png" />
-			     			<p>一日游</p>
-		     			</a>
+		     			<router-link to="/datago">
+			     			<a>
+				     			<img src="http://img1.qunarzz.com/piao/fusion/1611/a9/ffc620dbda9b9c02.png" />
+				     			<p>一日游</p>
+			     			</a>
+		     			</router-link>
 		     		</li>
 		     		<li>
 		     			<a>

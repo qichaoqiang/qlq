@@ -13,7 +13,7 @@
 import HeaderComponent from "./components/Header";
 import DivComponent from "./components/div";
 import SwiperComponent from "./components/Swiper";
-import LazyComponent from "./components/Lazyload";
+import LazyComponent from "./components/Activity";
 import WeenkendComponent from "./components/Weekend";
 import SectionComponent from "./components/Section";
 export default {
@@ -26,7 +26,7 @@ export default {
 		"home-section" : SectionComponent
    	},
 	mounted() {
-		if (this.$store.getters.shouldGetData) {
+		if (this.$store.getters.shouldGetIndexData) { 
 			this.$store.dispatch("getSwiperInfo");
 		}  	
 	}

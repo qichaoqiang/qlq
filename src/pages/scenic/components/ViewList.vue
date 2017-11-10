@@ -47,8 +47,7 @@
 	export default {
 		computed: {
 			ViewInfo() {
-				console.log(this.$store);	
-				return this.$store.state.view.ViewInfo;
+				return this.$store.state.view.ViewInfo
 			}
 		}
 	}

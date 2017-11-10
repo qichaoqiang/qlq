@@ -15,12 +15,14 @@
 			
 		</div>
 		<div class="mp-select-all" v-if="show1">
-			<div class="mp-select-list" scrolling="no">
-				<ul class="mp-select-inner">
-					<li class="mp-view-select" ref="listScroll" v-for="item in allKindInfo" :key="item.id">
-						<span class="mp-view-menu">{{item.kind}}</span>
-					</li>
-				</ul>
+			<div class="mp-select-list" scrolling="no" id="wrapper">
+				<div id="scroller">
+					<ul class="mp-select-inner">
+						<li class="mp-view-select" v-for="item in allKindInfo" :key="item.id">
+							<span class="mp-view-menu">{{item.kind}}</span>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="mp-select-commend" v-if="show2">
@@ -40,8 +42,12 @@
 </template>
 
 <script>
+	require('../../../iscroll/iscroll-probe.js')
+	require('../../../iscroll/demoUtils.js')
+//	import Zepto from '../../../iscroll/zepto.js'
+	
 	export default {
-		data: function() {
+		data() {
 			return {
 				show1: false,
 				show2: false,
@@ -61,8 +67,14 @@
 		},
 		computed: {
 			allKindInfo() {
+				console.log(this.myScroll);
 				return this.$store.state.view.allKindInfo;
 			}
+		},
+		mounted() {
+			setTimeout(() => {
+				this.myScroll = new IScroll("#wrapper",  { probeType: 3, mouseWheel: true });
+			}, 2000); 
 		}
 	}
 	
@@ -123,6 +135,7 @@
 	}
 	.mp-select-list {
 		width: 50%;
+		height: 4.8rem;
 		background: #fff;
 		overflow: hidden;
 	}
@@ -131,7 +144,8 @@
 	}
 	.mp-select-inner {
 		width: 100%;
-		height: 4.8rem;
+		/*height: 4.8rem;*/
+		overflow: hidden;
 	}
 	.mp-view-select {
 		width: 100%;
