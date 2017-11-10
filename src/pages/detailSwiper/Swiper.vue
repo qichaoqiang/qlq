@@ -10,7 +10,7 @@
 					<div class="swiper-page">{{item.id}}</div>
 					<div class="swiper-count">/{{detailSwiperInfo.length}}</div>
 					</div>
-					<!--<div class="swiper-pagination" slot="pagination">{{item.id}}</div>-->
+					
 				</router-link>
 			</swiper-slide>
 		</swiper>

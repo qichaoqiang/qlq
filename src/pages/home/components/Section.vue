@@ -4,10 +4,10 @@
     		<div class="swiper-img-con">
     			<ul class="swiper-img">
     				<li>
-		     			<a>
+		     			<router-link to="/mplist">
 			     			<img src="http://img1.qunarzz.com/piao/fusion/1611/54/ace00878a52d9702.png" />
 			     			<p>景点门票</p>
-		     			</a>
+		     			</router-link>
 		     		</li>
 		     		<li>
 		     			<a>

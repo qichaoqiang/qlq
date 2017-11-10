@@ -5,7 +5,7 @@
 			<h1 class="mp-header-title">故宫</h1>
 		</div>
 		<div class="mp-headfigure" v-for="item in headerInfo" :key="item.id">
-			<router-link :to="item.link">
+			<router-link to="/detailSwiper">
 			<div class="mp-headfigure-wrap" id="imgcontainer">
 				<img class="mp-headfigure-img" :src="item.imgUrl" alt="故宫"/>
 			</div>
@@ -46,11 +46,11 @@
 			headerInfo(state){
 				return state.mplist.headerInfo;
 			}
-		}),
+		})
 	}
 </script>
 
-<style>
+<style scoped>
 	html {
 		background:#f7f7f7;
 	}

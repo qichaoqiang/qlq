@@ -5,7 +5,7 @@
 		<div class="mp-hot-con">
 			<ul mp-role="hotList">
 				<li  v-for="lazy in activityInfo" :key="lazy.id" class="mp-hot-prod mp-border-bottom" >
-					<a href="/detail">
+					<router-link to="/mplist">
 					<div class="mp-hotlist-img image-ready">
 						<img :src="lazy.imgUrl"/>
 					</div>
@@ -17,7 +17,7 @@
 						<em class="mp-price-num">{{lazy.mppriceNum}}</em>
 						<span class="mp-price-text">{{lazy.mppriceText}}</span>
 					</div>
-					</a>
+					</router-link>
 				</li>
 			</ul>
 		</div>

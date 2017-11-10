@@ -5,7 +5,7 @@ import Home from '@/pages/home/Home'
 import Scenic from '@/pages/scenic/Home'
 import Datago from '@/pages/datago/Home'
 import Order from '@/pages/order/Home'
-import Detail from '@/pages/detail/Detail'
+import Detail from '@/pages/mplist/Detail'
 import DetailSwiper from '@/pages/detailSwiper/DetailSwiper'
 import Search from '@/pages/search/Search'
 

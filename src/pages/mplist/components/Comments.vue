@@ -17,7 +17,6 @@
 				<span class="mp-announce-closeicon iconfont">&#xe600;</span>
 			</div>
 		</div>
-		<div class="bottom"></div>
 	</div>
 </template>
 
@@ -28,7 +27,7 @@
 			return this.$store.state.mplist.commentsInfo
 			},
 			evaluateInfo(){
-			return this.$store.state.evaluateInfo	
+			return this.$store.state.mplist.evaluateInfo	
 			}
 		}
 	}
@@ -102,9 +101,5 @@
     position: absolute;
     color: #c7bcaf;
 }
-.bottom{
-	height: 10rem;
-	background: pink;
-	width: 100%;
-}
+
 </style>
