@@ -9,7 +9,7 @@ export default {
 			.then((response) =>{
 				if(response.status ===200){
 					const {data} = response.data;
-					context.commit("changeSwiperInfo",data);
+					context.commit("changeSwiper",data);
 					console.log(data);
 				}else{
 					console.log(123);
@@ -18,7 +18,7 @@ export default {
 		}
 	},
 	mutations:{
-		changeSwiperInfo(state,data){
+		changeSwiper(state,data){
 			state.detailSwiperInfo = data.detailSwiperInfo;	
 		}
 	},

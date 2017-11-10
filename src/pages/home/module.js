@@ -24,7 +24,7 @@ export default {
 			state.activityInfo = data.activityInfo;
 			state.weekendInfo = data.weekendInfo;
 			console.log(state);
-			console.log(state.swiperInfo)
+			//console.log(state.swiperInfo)
 		}
 	},
 	getters: {
